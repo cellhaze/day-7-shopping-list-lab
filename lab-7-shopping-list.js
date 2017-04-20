@@ -43,17 +43,25 @@ var shoppingList = [
   }];
   
 var total = 0;  
+var ammount = shoppingList.entries
+shoppingList.forEach(function() {
 
-shoppingList.forEach(function(i, j) {
-//    (i=0, i<11, i++)
 var list = document.getElementById("listitems");
 var listItem = document.createElement('li');
+var p = document.createTextNode("Hello" + shoppingList[0]);    
 list.appendChild(listItem, shoppingList);
-    var p = document.createTextNode("Hello");
-    list.appendChild(p);
+list.appendChild(p);
 });
 
-var total = document.createElement(shoppingList);
+console.log(ammount);
+
+//var sum = total;
+//var sumEl - document.createElement("h3");
+//sumEl.appendChild(sum);
+
+
+//var total = document.createElement(shoppingList);
+//Failed to execute element
 
 
 //shoppingList.forEach(function(item){
